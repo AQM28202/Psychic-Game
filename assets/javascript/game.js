@@ -4,6 +4,7 @@ var letterOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
 // Creating variables to hold the number of wins and losses. They start at 0.
 var wins = 0;
 var losses = 0;
+var guessesLeft = 9;
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
@@ -18,12 +19,15 @@ var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.lengt
 var userChoiceText = document.getElementById("guessessofar-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
+var guessesLeftText = document.getElementById("guessesleft-text");
 
 
-// Displays the user guess.
+
+// Displays the user guess, wins, losses, and guesses left
 userChoiceText.textContent = "Your Guesses So Far: " + userGuess;
 winsText.textContent = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
+guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
 
 
 
