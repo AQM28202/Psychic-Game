@@ -35,6 +35,6 @@ guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
 if (userGuess === computerGuess) {
       wins++;
     } else {
-      losses++;
+      losses++; guessesLeft--;
     }
 }
