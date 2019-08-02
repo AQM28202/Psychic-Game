@@ -32,12 +32,20 @@ guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
 
 
 // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
+
+
 if (userGuess !== computerGuess && guessesLeft !=0) {
       guessesLeft--;
     } 
 if (userGuess !== computerGuess && guessesLeft === 0) {
         losses++; guessesLeft=9;
-}
+    }
+if (userGuess === computerGuess) {
+        wins++; guessesLeft=9;
+    }
 }
 
-// How do I get all 9 user guesses to print? and How do I block user guesses that aren't part of the array
+
+// 1. How do I get all 9 user guesses to print? 
+// 2. How do I block user guesses that aren't part of the array?
+// 3. How do I prevent computer from changing guess before all nine guess are exhausted?
