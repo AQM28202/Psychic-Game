@@ -10,4 +10,10 @@ var userGuess = event.key;
 // Randomly chooses a letter from letterOptions array. This is the Computer's guess.
 var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
 
+// Create variables that hold references to the places in the HTML where we want to display things.
+var userChoiceText = document.getElementById("guessessofar-text");
+
+// Displays the user guess.
+userChoiceText.textContent = userGuess;
+
 }
