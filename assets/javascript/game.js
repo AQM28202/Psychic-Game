@@ -14,6 +14,6 @@ var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.lengt
 var userChoiceText = document.getElementById("guessessofar-text");
 
 // Displays the user guess.
-userChoiceText.textContent = userGuess;
+userChoiceText.textContent = "Guesses so far: " + userGuess;
 
 }
