@@ -17,10 +17,14 @@ var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.lengt
 // Create variables that hold references to the places in the HTML where we want to display things.
 var userChoiceText = document.getElementById("guessessofar-text");
 var winsText = document.getElementById("wins-text");
+var lossesText = document.getElementById("losses-text");
+
 
 // Displays the user guess.
 userChoiceText.textContent = "Your Guesses So Far: " + userGuess;
 winsText.textContent = "Wins: " + wins;
+lossesText.textContent = "Losses: " + losses;
+
 
 
 // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
