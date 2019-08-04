@@ -1,5 +1,5 @@
 // Create an array that lists out all of the alphabet options for user to guess. 
-var letterOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var letterOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Creating variables to hold the number of wins and losses. They start at 0.
 var wins = 0;
@@ -12,6 +12,8 @@ var userChoiceText = document.getElementById("guessessofar-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesLeftText = document.getElementById("guessesleft-text");
+
+
 
 
 // Randomly chooses a letter from letterOptions array. This is the Computer's guess.
