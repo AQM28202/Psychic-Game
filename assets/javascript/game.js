@@ -36,7 +36,9 @@ console.log("Guesses: " + guessList);
 if (userGuess === computerGuess) {
     wins++;
     guessesLeft = 9;
-    guessList = []
+    guessList = [];
+    computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
+    console.log("Computer Guess is: "  + computerGuess);
 
 }
 
@@ -44,6 +46,8 @@ else if (guessesLeft === 0) {
     guessesLeft = 9;
     attemptList = [];
     losses++;
+    computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
+    console.log("Computer Guess is: "  + computerGuess);
 
 }
 // Displays the user guess, wins, losses, and guesses left
