@@ -45,7 +45,7 @@ if (userGuess === computerGuess) {
 
 else if (guessesLeft === 0) {
     guessesLeft = 9;
-    attemptList = [];
+    guessList = [];
     losses++;
     computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
     console.log("Computer Guess is: "  + computerGuess);

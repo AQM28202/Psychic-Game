@@ -7,7 +7,7 @@ h1 {
     margin-right: 0;
     font-weight: bold;
     color: #fff;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Noto Serif', serif;
 
   }
  
@@ -21,7 +21,7 @@ img {
 }
 
 p {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Noto Serif', serif;
   font-size: 24px;
   margin-top: 20px;
   font-weight: bold;
@@ -33,6 +33,6 @@ p {
 }
 
 #directions-text {
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 36px;
+  font-family: 'Noto Serif', serif;
+  font-size: 28px;
 }
