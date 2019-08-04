@@ -5,6 +5,12 @@ var letterOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
 var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
+var guessList = []
+
+
+// Randomly chooses a letter from letterOptions array. This is the Computer's guess.
+var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
+console.log("Computer Guess is: "  + computerGuess)
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
@@ -12,8 +18,18 @@ document.onkeyup = function(event) {
 // Determines which key was pressed.
 var userGuess = event.key;
 
-// Randomly chooses a letter from letterOptions array. This is the Computer's guess.
-var computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
+// Decreases Guesses Left by One
+guessesLeft--;
+
+// Adds guesses to array
+guessList.push(userGuess);
+console.log("Guesses: " + guessList);
+
+
+
+
+
+
 
 // Create variables that hold references to the places in the HTML where we want to display things.
 var userChoiceText = document.getElementById("guessessofar-text");
@@ -24,7 +40,7 @@ var guessesLeftText = document.getElementById("guessesleft-text");
 
 
 // Displays the user guess, wins, losses, and guesses left
-userChoiceText.textContent = "Your Guesses So Far: " + userGuess;
+userChoiceText.textContent = "Your Guesses So Far: " + guessList;
 winsText.textContent = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
 guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
