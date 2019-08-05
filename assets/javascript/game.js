@@ -27,6 +27,8 @@ document.onkeyup = function(event) {
 var userGuess = event.key;
 var lowerCase = userGuess.toLowerCase();
 
+// Restricts user guesses to the options in my array
+if (letterOptions.indexOf(lowerCase) !== -1) {
 
 // Decreases Guesses Left by One
 guessesLeft--;
@@ -62,7 +64,7 @@ guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
 
 
 }
-
+}
 
 
 
