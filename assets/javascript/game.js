@@ -25,16 +25,19 @@ document.onkeyup = function(event) {
 
 // Determines which key was pressed.
 var userGuess = event.key;
+var lowerCase = userGuess.toLowerCase();
+
 
 // Decreases Guesses Left by One
 guessesLeft--;
 
-// Adds guesses to array
-guessList.push(userGuess);
+// Forces user guesses to lowercase and adds guesses to array
+
+guessList.push(lowerCase); 
 console.log("Guesses: " + guessList);
 
 
-if (userGuess === computerGuess) {
+if (lowerCase === computerGuess) {
     wins++;
     guessesLeft = 9;
     guessList = [];
