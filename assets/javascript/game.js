@@ -44,6 +44,7 @@ if (lowerCase === computerGuess) {
     guessesLeft = 9;
     guessList = [];
     computerGuess = letterOptions[Math.floor(Math.random() * letterOptions.length)];
+    alert("You Guessed It!!!")
     console.log("Computer Guess is: "  + computerGuess);
 
 }
